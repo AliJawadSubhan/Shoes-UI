@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shoesui/components/defaultElemants.dart';
-import 'package:shoesui/models/shoe_model/shoe_list.dart';
 import 'package:shoesui/models/shoe_model/shoe_model.dart';
-import 'package:shoesui/screens/detail_page.dart';
+import 'package:shoesui/screens/details_page.dart';
 
 class ItemCard extends StatelessWidget {
   const ItemCard({
@@ -28,7 +27,7 @@ class ItemCard extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => DetailPage(
+                    builder: (context) => Details(
                       activeheart: shoeList.activeheart,
                       shoeimage: shoeList.shoeimage,
                       shoeName: shoeList.shoeName,
